@@ -1,3 +1,5 @@
+// CALCULATOR CLASS
+
 class Calculator {
   constructor(writespace, resultspace) {
     this.writespace = writespace
@@ -64,6 +66,7 @@ class Calculator {
   }
 }
 
+// VARIABLES TO TAKE THINGS FROM HTML
 const numberButton = document.querySelectorAll('[data-number]')
 const operationButton = document.querySelectorAll('[data-operator]')
 const equalButton = document.querySelector('[data-equals]')
@@ -71,6 +74,8 @@ const deleteButton = document.querySelector('[data-delet]')
 const deleteallButton = document.querySelector('[data-deletall]')
 const writespace = document.querySelector('[data-write]')
 const resultspace = document.querySelector('[data-result]')
+
+// MAIN
 
 const calculator = new Calculator(writespace, resultspace)
 
@@ -102,3 +107,5 @@ deleteButton.addEventListener('click', button => {
   calculator.delete()
   calculator.updateResult()
 })
+
+//LJ
