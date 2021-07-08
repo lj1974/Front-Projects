@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="tictactoe.css" />
+    <title>TicTacToe</title>
+  </head>
+  <body>
+    <header>
+      <span><h1>TictacToe</h1></span>
+    </header>
+    <main>
+      <div class="table">
+        <div board class="grid">
+          <button data-put class="put"></button>
+          <button data-put class="put"></button>
+          <button data-put class="put"></button>
+          <button data-put class="put"></button>
+          <button data-put class="put"></button>
+          <button data-put class="put"></button>
+          <button data-put class="put"></button>
+          <button data-put class="put"></button>
+          <button data-put class="put"></button>
+        </div>
+      </div>
+      <div class="messagewin" winning-cond>
+        <div winning-text id="text"></div>
+        <button id="restart" data-restart>Restart</button>
+      </div>
+    </main>
+    <script src="tictactoe.js"></script>
+  </body>
+</html>
+
+<!-- LJ -->

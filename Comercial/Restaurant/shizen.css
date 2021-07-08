@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --textcolor: #f4f2f0;
+  --details: #1b1010;
+  --hoover: #5a6170;
+}
+/* WHOLE PAGE THING */
+
+a {
+  text-decoration: none;
+  color: var(--textcolor);
+}
+
+body {
+  background-color: var(--details);
+}
+
+main {
+  background-color: #f0efef;
+  padding: 1.5rem;
+  border-radius: 4rem 4rem 0 0;
+}
+
+/* BUTTON */
+button {
+  display: inline-block;
+  text-decoration: none;
+
+  background-color: var(--textcolor);
+  color: var(--details);
+
+  border: 0;
+  font-size: 1.5rem;
+  border-radius: 1.2rem;
+  padding: 1rem 2.5rem;
+}
+
+button:hover {
+  background-color: var(--textcolor);
+  color: var(--hoover);
+}
+
+div.border {
+  display: inline-block;
+
+  background-color: var(--details);
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  padding: 0.3rem;
+  margin: 1rem 0;
+}
+
+h1 a {
+  font-size: 3rem;
+  padding-left: 1.5rem;
+  font-family: 'Zilla Slab Highlight', cursive;
+}
+
+span {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  padding-right: 1.2rem;
+  padding-top: 0.5rem;
+  font-family: 'B612 Mono', monospace;
+}
+
+/* TEXT */
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+  color: var(--hoover);
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+h2 spam {
+  color: var(--details);
+  padding-left: 1.2rem;
+}
+
+h2 spam:hover {
+  color: var(--hoover);
+}
+
+/* MAIN PAGE */
+
+#mainpage {
+  padding-top: 2rem;
+  text-align: center;
+  font-family: 'B612 Mono', monospace;
+}
+
+div.text {
+  margin-bottom: 4rem;
+}
+
+#firsttext {
+  padding-bottom: 1.3rem;
+  font-size: 0.7rem;
+  color: var(--textcolor);
+}
+
+img {
+  align-content: center;
+  border-radius: 5rem;
+  margin: 1rem 0;
+  height: 30rem;
+}
