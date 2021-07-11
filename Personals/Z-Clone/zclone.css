@@ -42,17 +42,9 @@ body {
   font-size: 2rem;
   position: fixed;
 
-  top: 32rem;
-  left: 23rem;
-}
-
-/* responsive plus */
-@media screen and (min-width: 700px) {
-  #plus {
-    position: fixed;
-    right: 2rem;
-    left: auto;
-  }
+  right: 1rem;
+  left: auto;
+  bottom: 2.5rem;
 }
 
 /* TEXTS AND TITLES */
@@ -74,6 +66,7 @@ body {
   font-family: var(--fonttwo);
   font-size: 1rem;
   font-weight: 500;
+  color: white;
 }
 /* PART OF THE THE HEADER */
 
@@ -103,9 +96,9 @@ body {
 }
 
 #rightspan i:hover,
-#back:hover,
-#bell:hover {
+#back:hover {
   opacity: 50%;
+  cursor: pointer;
 }
 
 /* PROFILE PIC */
@@ -360,6 +353,11 @@ h2,
   color: rgb(241, 179, 7);
 }
 
+.button:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
 /* SECOND PART OF THE PAGE */
 
 #parttwo {
@@ -521,41 +519,178 @@ h2,
 
 /* CARD------------ */
 
-#card {
-  display: flex;
+.card {
+  display: none;
   justify-content: flex-end;
-  opacity: 0;
+}
+
+#show {
+  display: flex;
 }
 
 .cardz {
   position: absolute;
   background: #180822;
-  height: 25rem;
-  width: 25rem;
+  height: fit-content;
+  width: 100%;
   z-index: 2;
 
-  padding: 3rem;
+  padding-top: 1rem;
 
   display: flex;
   justify-content: center;
   flex-direction: column;
 
   border-radius: 2rem 2rem 0 0;
+  border-top: 2px solid #903cb1;
 
   bottom: 0;
+}
+
+.cardz::after,
+.cardz::before {
+  content: '';
+  position: absolute;
+  background: #903cb1;
+
+  width: 3.5rem;
+  height: 0.3rem;
+
+  top: -0.22rem;
+  left: 5rem;
+}
+
+.cardz::before {
+  top: -0.29rem;
+  left: 5.3rem;
+}
+
+#bordercard {
+  border-top: 0.00007rem solid #903cb136;
+  border-radius: 0.7rem;
+  margin-left: 0.7rem;
+  margin-right: 1rem;
+
+  border-right: 0.00007rem solid #903cb109;
 }
 
 .headname {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.headname .title {
+  margin-left: 12rem;
+}
+
+.headname .text {
+  font-size: 0.9rem;
+  color: #979797;
+  margin-right: 2rem;
 }
 
 .cardblock {
-  background: black;
-  padding: 3rem;
+  border: 0.00007rem solid rgb(87, 86, 86);
+  border-radius: 0.7rem;
+  padding: 2rem;
+  margin: 0 1rem;
+
+  height: auto;
+}
+
+.cardblock {
+  background-image: url('https://i.pinimg.com/236x/db/9b/6c/db9b6cf4ee25bb3db1d9652aac5d981d.jpg');
+  background-color: #0000009a;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
 }
 
 .gridprofile {
   display: flex;
+
+  gap: 2rem;
 }
+
+.gridprofile > span {
+  align-content: right;
+}
+
+.gridprofile img {
+  height: 6rem;
+  width: 6rem;
+}
+
+#cardtext {
+  padding: 2rem 0;
+  margin-bottom: 9rem;
+
+  font-size: 0.9rem;
+}
+
+/* MENU------------- */
+
+.card.two {
+  display: none;
+}
+
+.card.two .cardblock {
+  background: none;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.card.two h3 {
+  padding-bottom: 1rem;
+  font-family: var(--font);
+  font-weight: 800;
+}
+
+.card.two i {
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .cardz {
+    width: auto;
+  }
+
+  .card.two {
+    width: 20rem;
+  }
+}
+
+/* EDITE PROFILE CLOSED */
+
+/* .card.three {
+  display: none;
+}
+
+.card.three .cardz {
+  padding-bottom: 2rem;
+}
+
+.card.three .cardblock {
+  display: grid;
+  background: none;
+  border: none;
+  grid-template-columns: repeat(2, 4.5rem);
+}
+
+input {
+  width: 15rem;
+  border: 0.2rem solid rgb(255, 237, 237);
+  border-radius: 0.7rem;
+}
+
+.card.three input {
+  margin-bottom: 1rem;
+} */
+
+/* LJ */

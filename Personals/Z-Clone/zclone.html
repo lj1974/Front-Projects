@@ -20,31 +20,62 @@
     <title>Z profile clone</title>
   </head>
   <body>
-    <section id="card">
+    <section data-card class="card">
       <div class="cardz">
-        <div class="headname">
-          <h3 class="title">Cartão-Z</h3>
-          <h3 class="text">Editar</h3>
-        </div>
-        <div class="cardblock">
-          <div class="gridprofile">
-            <span>
+        <div id="bordercard">
+          <div class="headname">
+            <h3 class="title">Cartão-Z</h3>
+            <h3 class="text">Editar</h3>
+          </div>
+          <div class="cardblock">
+            <div class="gridprofile">
               <img
                 src="https://i.pinimg.com/236x/d9/83/ec/d983ec189e1aa60a0a5e31cc90a6b684.jpg"
                 alt="profile pic"
-            /></span>
-            <span
-              ><h3 class="title">Milize</h3>
-              <h3 class="personal">@appelorno</h3></span
-            >
-            <div class="tags"><span class="blue">#part-time what</span></div>
+              />
+              <span
+                ><h3 class="title">Milize</h3>
+                <h3 class="personal">@appelorno</h3>
+                <div class="tags">
+                  <span class="blue">#part-time what</span>
+                </div>
+              </span>
+            </div>
+
+            <p id="cardtext" class="text">
+              Hello, welcome. If u like what you're seeing, please check it out.
+            </p>
           </div>
-          <p id="cardtext" class="text">
-            Hello, welcome. If u like what you're seeing, please check it out.
-          </p>
         </div>
       </div>
     </section>
+    <section data-menu class="card two">
+      <div class="cardz">
+        <div id="bordercard">
+          <div class="cardblock">
+            <h3 class="title"><i class="fas fa-link"></i>Copiar link</h3>
+            <h3 class="title">
+              <i class="fas fa-arrow-right"></i>Compartilhar
+            </h3>
+            <h3 class="title"><i class="fas fa-pencil-alt"></i>Editar</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- closed
+    <section data-edit class="card three">
+      <div class="cardz">
+        <div id="bordercard">
+          <div class="cardblock">
+            <h3 class="text">Apelido</h3>
+            <input data-name type="text" />
+            <h3 class="text">Z-Id</h3>
+            <input data-nick type="text" />
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <main>
       <div id="plus"><i class="fas fa-plus"></i></div>
@@ -54,7 +85,8 @@
             <i class="fas fa-arrow-left"></i>
           </span>
           <span class="button" id="rightspan"
-            ><i class="fas fa-address-card"></i><i class="fas fa-ellipsis-h"></i
+            ><i card-button class="fas fa-address-card"></i
+            ><i menu-button class="fas fa-ellipsis-h"></i
           ></span>
         </div>
         <div>
@@ -71,8 +103,8 @@
           </span>
         </div>
         <div id="namespace">
-          <h1 class="title">Milize</h1>
-          <h2 class="personal">@appleorno</h2>
+          <h1 data-insertname class="title">Milize</h1>
+          <h2 data-insertnick class="personal"><span>@</span> appleorno</h2>
           <h2 id="membro" class="personal">Membro Z desde 5 de nov de 2020</h2>
         </div>
         <div id="follow">
@@ -88,7 +120,7 @@
           <span class="pink">#anime</span>
         </div>
         <div id="buttonsdiv">
-          <span class="button"
+          <span edit-button class="button"
             ><i id="pencil" class="fas fa-pencil-alt"></i> Editar</span
           >
           <span class="button"><i id="bell" class="fas fa-bell"></i></span>
@@ -123,4 +155,7 @@
       </section>
     </main>
   </body>
+  <script src="zclone.js"></script>
 </html>
+
+<!-- LJ -->
