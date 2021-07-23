@@ -5,64 +5,178 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EA</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script
+      src="https://kit.fontawesome.com/656d0f6542.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- STYLE -->
-    <link rel="stylesheet" href="eastyle.css" />
+    <link rel="stylesheet" href="eamainstyle.css" />
   </head>
   <body>
-    <aside>
+    <header>
       <div class="head">
-        <h1 class="title">EA</h1>
-        <nav class="navbar">
-          <form class="form-inline">
-            <input type="search" placeholder="Search" />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
-        </nav>
+        <img
+          src="https://i.pinimg.com/236x/89/c2/96/89c296d1f99ede293399ec1574ae6bfb.jpg"
+          alt="Logo"
+        />
+        <a class="imgone" href="story/story.html"></a>
       </div>
-      <div class="links">
-        <a href="">ring</a>
-        <a href="">book</a>
-        <a href="">mark</a>
-        <a href="">group</a>
-        <a href="">people</a>
-        <a href="">galery</a>
+      <div class="box">
+        <div id="simbol"><i class="fas fa-apple-alt"></i> & <i class="fas fa-spider"></i></div>
+        <h4>Enredo dos Anéis</h4>
+        <p class="text">
+         O RPG online que jogamos. Aventuras, personagens, capítulos, história poderão ser encontrados aqui.
+        </p>
+        </br>
+        <a href="#depo" id="more">MAIS</a>
       </div>
-    </aside>
+    </header>
+
     <main>
-      <section id="mainpage">
-        <div class="container" id="intro">
-          <span>
-            <i>apple</i>
-            <i>spider</i>
-          </span>
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minus
-            saepe tenetur repudiandae, similique ut, incidunt facere ipsa
-            tempore eum id natus laborum deleniti! Nulla, expedita consequatur.
-            Dolorem, hic similique!
-          </p>
+      <section class="secondhead">
+        <h2>Jogadores</h2>
+        <div class="swiper-container mySwiper">
+             <div class="swiper-wrapper">
+             <div class="swiper-slide">
+          <div class="gridimg">
+            <img
+              src="https://i.pinimg.com/236x/67/50/80/675080d39ab4934b13b879c5b4e42b06.jpg"
+              alt="rox"
+              class="charac"
+            />
+            <h4 class="name">Hilda</h4>
+          </div>
+             </div>
+                <div class="swiper-slide">
+          <div class="gridimg">
+            <img
+              src="https://i.pinimg.com/236x/2b/f8/46/2bf846f31527f3de918a7ab6c5fdcfd3.jpg"
+              alt="test"
+              class="charac"
+            />
+            <h4 class="name">Alguem</h4>
+          </div>
+                </div>
+            <div class="swiper-slide">
+          <div class="gridimg">
+            <img
+              src="https://i.pinimg.com/236x/5a/7b/19/5a7b190373d34117d8baf71d7d804584.jpg"
+              alt="ro"
+              class="charac"
+            />
+            <h4 class="name">Alguem</h4>
+          </div>
+            </div>
+             <div class="swiper-slide">
+          <div class="gridimg">
+            <img src="" alt="" class="charac" />
+            <h4 class="name">Alguem</h4>
+          </div>
+             </div>
+                <div class="swiper-slide">
+          <div class="gridimg">
+            <img src="" alt="" class="charac" />
+            <h4 class="name">Alguem</h4>
+          </div>
+                </div>
         </div>
-        <div class="container" id="depo">
+        </div>
+      </section>
+      <section id="mainpage">
+        <div  id="intro">
+          <div class="container">
+            <div>
+            <h3 class="name">Capítulos</h3>
+            <p class="text">Todos os capitulos da historia percorrida durante as encenaçoes se encontra aqui.</p>
+              <div class="hashtag">#Enredo</div>
+              </div>
+              <div>
+              <img src="https://i.pinimg.com/236x/da/45/53/da455393c570f5f107f550a900ce2054.jpg" alt="enredo">
+              </div>
+          </div>
+              <div class="container">
+            <div>
+            <h3 class="name">Personagens</h3>
+            <p class="text">Todos os personagens já vistos no EA, estejam eles vivos ou mortos.</p>
+              <div class="hashtag">#Personagens</div>
+              </div>
+              <div>
+              <img src="https://i.pinimg.com/236x/b4/98/e4/b498e4fde0fc164e85dbe0ed45cc3cb8.jpg" alt="personagens">
+              </div>
+          </div>
+          <div class="container">
+            <div>
+            <h3 class="name">Galeria</h3>
+            <p class="text">Todos as fanarts e arts originais feitas pelos nossos membros.</p>
+              <div class="hashtag">#Art</div>
+              <div class="hashtag">#FanArts</div>
+              </div>
+              <div>
+              <img src="https://i.pinimg.com/236x/d3/21/b8/d321b8caba93054fac7df60178ce238c.jpg" alt="arts">
+              </div>
+        </div>
+        </div>
+        <div id="depo">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+          <div class="box">
           <span>
-            <img src="" alt="" />
-            <h2>Person name</h2>
+            <img src="https://i.pinimg.com/236x/b9/b1/92/b9b192f7aca05f90d86b13fd82ae8050.jpg" alt="lucky" />
+            <h2>Lucky</h2>
           </span>
           <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
             placeat voluptatibus cum quae velit. Sed, modi.
           </p>
+          </div>
+              </div>
+              <div class="swiper-slide">
+          <div class="box">
           <span>
-            <img src="" alt="" />
-            <h2>Person name</h2>
+            <img src="https://i.pinimg.com/236x/3a/6a/8b/3a6a8bb8c20e989001f910f06d12a07d.jpg" alt="Kokuro" />
+            <h2>Kokuro</h2>
           </span>
           <p class="text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
             veritatis vitae eligendi quaerat laudantium voluptatem.
           </p>
+          </div>
+              </div>
+             </div>
+          <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+        </div>
         </div>
       </section>
     </main>
+     <footer><p>Made by <i class="fas fa-apple-alt"></i> (LJ)</p></footer>
+      <!-- SWIPER -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- SCRIPT -->
+<script src="mainscript.js"></script>
   </body>
 </html>
+
