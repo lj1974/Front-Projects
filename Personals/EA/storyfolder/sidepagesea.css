@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --maincolor: #d73e00;
+  --details: black;
+  --radiousp: 1rem;
+  --textad: grey;
+}
+html {
+  width: 339px;
+  background: white;
+}
+
+body {
+  background: #000000;
+  font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--maincolor);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid var(--maincolor);
+}
+
+/* ----------IT IS 
+STORY PAGE----------- */
+
+img {
+  object-fit: cover;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+
+  margin: 0.5rem 0;
+}
+
+main {
+  margin: 1rem;
+  color: var(--maincolor);
+}
+
+/* BOX -----------*/
+.container {
+  position: relative;
+  border: 0.2225px solid var(--textad);
+  border-radius: var(--radiousp);
+
+  padding: 1rem;
+
+  margin-top: 2.4rem;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 1.5rem;
+
+  background: var(--details);
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  border: 1px solid var(--textad);
+}
+
+/* TITLES-------- */
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem;
+  padding-top: 1.8rem;
+}
+
+/* TEXT--------- */
+
+p {
+  margin-bottom: 0.5rem;
+  text-indent: 1rem;
+}
+
+.text {
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: 20px;
+}
+
+.imgtext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.imgtext p.text {
+  text-indent: 0rem;
+  margin: 0.5rem 0;
+}
+
+/* FONTS------------ */
+
+h1,
+.text {
+  font-family: 'Mono Sans', sans-serif;
+}
+
+/* LINKS--------- */
+
+a {
+  display: inline-block;
+  background: var(--maincolor);
+  color: var(--details);
+  text-decoration: none;
+
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  padding-right: 1.3rem;
+  border-radius: 0 1rem 1rem 0;
+  margin-top: 1rem;
+}
+
+a:hover {
+  opacity: 70%;
+}
+
+/* FOOTER---------- */
+footer {
+  display: flex;
+  justify-content: center;
+
+  padding: 0.3rem;
+  margin-top: 3rem;
+
+  background: var(--textad);
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 0.8rem;
+}
+
+/* Hashtags----------- */
+
+.hashtag {
+  display: inline-block;
+  color: var(--maincolor);
+  border: 1px solid var(--maincolor);
+
+  font-size: 0.6rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+
+  margin: 1.6rem 0 0 0.4rem;
+}
+
+/* ---------IT IS
+CAPITULOS PAG-------- */
+
+#cap ul {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+
+#cap ul il::before {
+  content: '\2022';
+  color: var(--textad);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+#cap h2 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+/* ------IT IS
+PERSONAGENS SPACE--------- */
+
+#perso h1 {
+  border-bottom: 0.22px solid var(--textad);
+  padding-bottom: 0.4rem;
+}
+
+#perso .imgtext {
+  margin-top: 2rem;
+}
+
+#perso .imggrid {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 2rem;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}

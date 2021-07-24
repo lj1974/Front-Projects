@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --maincolor: #d73e00;
+  --details: black;
+  --radiousp: 1rem;
+  --textad: grey;
+}
+
+html {
+  width: 339px;
+  background: white;
+}
+
+body {
+  background: #000000;
+  font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--maincolor);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid var(--maincolor);
+}
+
+/* Page starts */
+
+main {
+  margin: 1rem;
+  color: var(--maincolor);
+}
+
+/* TEXT--------- */
+
+p {
+  margin-bottom: 0.5rem;
+  text-indent: 1rem;
+}
+
+.text {
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: 20px;
+}
+
+/* FONTS------------ */
+
+h1,
+.text {
+  font-family: 'Mono Sans', sans-serif;
+}
+
+/* LINKS--------- */
+
+a {
+  display: inline-block;
+  background: var(--maincolor);
+  color: var(--details);
+  text-decoration: none;
+
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  padding-right: 1.3rem;
+  border-radius: 0 1rem 1rem 0;
+  margin-top: 1rem;
+}
+
+a:hover {
+  opacity: 70%;
+}
+
+/* FOOTER---------- */
+footer {
+  display: flex;
+  justify-content: center;
+
+  padding: 0.3rem;
+  margin-top: 3rem;
+
+  background: var(--textad);
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 0.8rem;
+}
+
+/* Hashtags----------- */
+
+.hashtag {
+  display: inline-block;
+  color: var(--maincolor);
+  border: 1px solid var(--maincolor);
+
+  font-size: 0.6rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+
+  margin: 1.6rem 0 0 0.4rem;
+}

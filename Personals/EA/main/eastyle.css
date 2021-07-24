@@ -164,6 +164,9 @@ a:hover {
 }
 /* MAIN----- characters*/
 
+.secondhead a {
+  text-decoration: none;
+}
 .secondhead h2 {
   font-size: 1.2rem;
   margin: 2.8rem 0 0 0;
@@ -203,6 +206,10 @@ a:hover {
 
 #intro {
   margin: 4rem 0;
+}
+
+#intro a {
+  text-decoration: none;
 }
 
 .container {
