@@ -5,10 +5,11 @@
   margin: 0;
   box-sizing: content-box;
   scroll-behavior: smooth;
+  text-overflow: ellipsis;
 }
 
 :root {
-  --maincolor: #d73e00;
+  --maincolor: #410ed3;
   --details: black;
   --radiousp: 1rem;
   --textad: grey;
@@ -19,7 +20,7 @@ html {
 }
 
 body {
-  background: #000000;
+  background: black;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -129,11 +130,11 @@ a {
   color: var(--details);
   text-decoration: none;
 
-  padding: 0.5rem;
+  padding: 0.3rem 1rem;
   font-size: 1.2rem;
-  padding-right: 1.3rem;
-  border-radius: 0 1rem 1rem 0;
-  margin-top: 1rem;
+  border-radius: 0.3rem;
+  margin: 1rem 0.8rem;
+  margin-bottom: 0;
 }
 
 a:hover {
@@ -226,3 +227,5 @@ PERSONAGENS SPACE--------- */
   vertical-align: middle;
   width: 100%;
 }
+
+/* lj */

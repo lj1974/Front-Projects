@@ -8,8 +8,8 @@
 }
 
 :root {
-  --maincolor: #d73e00;
-  --details: black;
+  --maincolor: #410ed3;
+  --details: rgb(0, 0, 0);
   --radiousp: 2rem;
   --textad: grey;
 }
@@ -17,7 +17,7 @@ html {
   width: 339px;
 }
 body {
-  background: rgb(0, 0, 0);
+  background: #000000;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -184,9 +184,10 @@ a:hover {
 }
 .charac {
   height: 12rem;
-  width: 9rem;
+  width: 8.5rem;
   border-radius: 1rem;
   margin: 1rem;
+  padding-right: 0.5rem;
 }
 
 .charac:hover {
