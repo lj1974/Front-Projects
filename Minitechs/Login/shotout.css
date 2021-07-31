@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --background: rgb(255, 255, 255);
+  --details: rgb(0, 0, 0);
+  --textone: rgb(128, 125, 125);
+  --texttwo: rgb(66, 65, 65);
+}
+
+/* GENERAL */
+html {
+  display: flex;
+  justify-content: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--background);
+  padding: 2.2rem 1rem;
+  overflow: hidden;
+}
+
+/* TEXTSSS */
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+h1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+i {
+  font-style: normal;
+}
+
+.title {
+  font-size: 1rem;
+  color: var(--textone);
+  padding: 1rem;
+}
+
+.title span {
+  font-size: 3rem;
+}
+
+.title strong {
+  color: var(--details);
+}
+
+h2 {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BOX */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  width: fit-content;
+
+  border: 0.333px solid var(--texttwo);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* LOGIN ALTERNATIVE BOX */
+
+.alternativelog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texttwo);
+  margin: 0.2rem;
+  margin-top: 2rem;
+
+  border: 0.333px solid var(--texttwo);
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.5rem;
+}
+
+.alternativelog img {
+  margin-right: 0.7rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.alternativelog:hover {
+  opacity: 70%;
+}
+
+/* INPUTS */
+
+.putinfo input {
+  all: unset;
+  padding: 0.3rem;
+  margin: 0.8rem 0;
+  border-bottom: 2px solid var(--details);
+  width: 100%;
+}
+
+.putinfo input:first-of-type {
+  margin-top: 2rem;
+}
+
+input:focus {
+  transition: all 0.5s ease;
+  border-bottom: 2px solid var(--texttwo);
+}
+
+.check {
+  display: flex;
+  align-items: flex-end;
+  color: var(--textone);
+  margin-bottom: 2rem;
+  margin-top: 0.7rem;
+}
+
+#checkbox-toggle {
+  margin-right: 0.5rem;
+}
+
+/* BUTTONS */
+
+.button {
+  width: fit-content;
+  background: var(--details);
+
+  font-weight: 600;
+  color: var(--textone);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  background: var(--textone);
+  color: var(--details);
+}
+
+.asks {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.asks h2 a {
+  color: var(--texttwo);
+}

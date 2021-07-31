@@ -1,0 +1,227 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --background: white;
+  --radious: 0.4rem;
+}
+
+body {
+  background: rgba(26, 18, 18, 0.562);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 16rem);
+  margin-top: 5rem;
+}
+
+section {
+  margin: 3rem;
+}
+
+.but {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radious);
+
+  position: relative;
+
+  color: rgb(8, 8, 8);
+  background-color: var(--background);
+}
+
+.btn-border::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+
+  border: 3px solid var(--background);
+  border-radius: var(--radious);
+  transition: inset 0.1s ease-in-out;
+}
+
+.btn-border:hover::before,
+.btn-border:focus::before {
+  inset: -5px;
+}
+
+.but.two::before {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  font-weight: bolder;
+  inset: 0;
+  border-radius: var(--radious);
+  z-index: -1;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease-in-out;
+}
+
+.but.two:hover::before,
+.but.two:focus::before {
+  transform: scaleX(1);
+}
+
+.but.two {
+  z-index: 1;
+  transition: color 500ms ease-in-out;
+}
+
+.but.two:hover,
+.but.two:focus {
+  color: red;
+}
+
+.but.three::before {
+  content: '';
+  position: absolute;
+  background-color: #000;
+  font-weight: bolder;
+  inset: 0;
+  border-radius: var(--radious);
+  z-index: -1;
+
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in;
+}
+
+.but.three:hover::before,
+.but.three:focus::before {
+  transform: scaleY(1);
+}
+
+.but.three {
+  z-index: 1;
+  transition: color 1s ease-in-out;
+}
+
+.but.three:hover,
+.but.three:focus {
+  color: red;
+}
+
+.but.four {
+  border-radius: 0;
+}
+.but.four::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-bottom: 5px solid #000;
+
+  transform: scaleX(0);
+  transform-origin: top;
+  transition: transform 500ms ease-in-out;
+}
+
+.but.four:hover::before,
+.but.four:focus::before {
+  transform: scaleX(1);
+}
+
+.words.one {
+  display: inline;
+  position: relative;
+  background: var(--wordback);
+
+  padding: 0.8rem 1.4rem;
+
+  --wordback: white;
+}
+
+.words.one::before {
+  content: '';
+  inset: 0;
+  left: 1.4rem;
+  position: absolute;
+  background: var(--wordback);
+
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.words.one::after {
+  content: '|';
+  position: absolute;
+  color: #000;
+  font-weight: bolder;
+
+  inset: 0;
+  top: 0.8rem;
+  left: 1.4rem;
+
+  height: 1.3rem;
+  z-index: 1;
+
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.words.one:hover::after,
+.words.one:focus::after {
+  transform: scaleX(0);
+  transition: transform 4s steps(16);
+}
+
+.words:hover::before {
+  transform: scaleX(0);
+  transition: transform 4s steps(16);
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.first {
+  display: block;
+  background: var(--background);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radious);
+}
+
+.words.two {
+  display: inline;
+  color: rgba(26, 18, 18, 0);
+  position: relative;
+
+  padding: 1.5rem;
+}
+
+.words.two {
+  z-index: 1;
+}
+
+.words.two::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: white;
+  z-index: -1;
+
+  transform: scaleY(0);
+  transform-origin: top;
+  border-radius: var(--radious);
+}
+
+.words.two:hover {
+  color: #000;
+  transition: color 1s ease;
+  transition-delay: 400ms;
+}
+
+.words.two:hover::before {
+  transform: scaleY(1);
+  transition: transform 400ms ease-in-out;
+}
