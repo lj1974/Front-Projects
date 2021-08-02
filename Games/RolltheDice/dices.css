@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --text: #030303;
+  --back: #c9e5f2;
+  --border: 1rem;
+  --font: monospace, sans-serif;
+  --hover: rgb(59, 59, 59);
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box,
+.sidebox,
+.title,
+.text,
+.button {
+  font-family: var(--font);
+  color: var(--text);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--back);
+  border-radius: var(--border);
+
+  padding: 1rem 0;
+  width: auto;
+}
+
+.sidebox {
+  display: block;
+  padding: 1rem;
+  font-size: 0.5rem;
+  background: var(--back);
+  border-radius: 0.7rem;
+
+  margin: 1rem 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.close {
+  font-weight: bolder;
+  font-size: 1rem;
+
+  font-style: normal;
+
+  border: 1px solid var(--text);
+  padding: 0rem 0.3rem;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 2rem;
+
+  padding-right: 1.5rem;
+}
+
+.placenumber {
+  display: flex;
+  justify-content: center;
+
+  margin: 3rem;
+
+  background: #000;
+  border-radius: 50%;
+
+  color: var(--back);
+  padding: 3rem 3rem;
+
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.placenumber:hover,
+.placenumber:focus {
+  background: var(--hover);
+}
+
+.button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  background: var(--text);
+  color: var(--back);
+
+  font-size: 1.4rem;
+  margin: 1rem;
+  margin-top: 0;
+  margin-left: 33%;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--hover);
+}
