@@ -4,25 +4,132 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="dices.css" />
     <title>Animation 1</title>
   </head>
   <body>
     <main>
-      <section>
-        <div class="box">
-          <div class="head">
-            <h1 class="title">0/10</h1>
-            <i class="close">X</i>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section>
+              <div class="box one">
+                <div class="head">
+                  <h1 class="title">1/4</h1>
+                  <i class="close">X</i>
+                </div>
+                <div data-number data-number-four class="placenumber">?</div>
+                <div class="button-side">
+                  <button data-roll-four class="button">Roll</button>
+                  <button data-reset class="button">Reset</button>
+                </div>
+              </div>
+              <div class="sidebox one">
+                <h2 class="text">Roll the dice to get a number!</h2>
+              </div>
+            </section>
           </div>
-          <div data-number-ten class="placenumber">10</div>
-          <button data-roll-ten class="button">Roll</button>
+
+          <div class="swiper-slide">
+            <section>
+              <div class="box two">
+                <div class="head">
+                  <h1 class="title">1/10</h1>
+                  <i class="close">X</i>
+                </div>
+                <div data-number data-number-ten class="placenumber">?</div>
+                <div class="button-side">
+                  <button data-roll-ten class="button">Roll</button>
+                  <button data-reset class="button">Reset</button>
+                </div>
+              </div>
+              <div class="sidebox two">
+                <h2 class="text">Roll the dice to get a number!</h2>
+              </div>
+            </section>
+          </div>
+
+          <div class="swiper-slide">
+            <section>
+              <div class="box three">
+                <div class="head">
+                  <h1 class="title">1/50</h1>
+                  <i class="close">X</i>
+                </div>
+                <div data-number data-number-five class="placenumber">?</div>
+                <div class="button-side">
+                  <button data-roll-five class="button">Roll</button>
+                  <button data-reset class="button">Reset</button>
+                </div>
+              </div>
+              <div class="sidebox two">
+                <h2 class="text">Roll the dice to get a number!</h2>
+              </div>
+            </section>
+          </div>
+
+          <div class="swiper-slide">
+            <section>
+              <div class="box four">
+                <div class="head">
+                  <h1 class="title">1/100</h1>
+                  <i class="close">X</i>
+                </div>
+                <div data-number data-number-hundred class="placenumber">?</div>
+                <div class="button-side">
+                  <button data-roll-hundred class="button">Roll</button>
+                  <button data-reset class="button">Reset</button>
+                </div>
+              </div>
+              <div class="sidebox two">
+                <h2 class="text">Roll the dice to get a number!</h2>
+              </div>
+            </section>
+          </div>
+
+          <div class="swiper-slide">
+            <section>
+              <div class="box five">
+                <div class="head">
+                  <h1 class="title">1/?</h1>
+                  <i class="close">X</i>
+                </div>
+                <div data-number data-number-input class="placenumber">?</div>
+                <input
+                  type="number"
+                  name="input-number"
+                  id="input-number"
+                  placeholder="Enter a number"
+                  value=""
+                />
+                <div class="button-side">
+                  <button data-roll-input class="button">Roll</button>
+                  <button data-reset class="button">Reset</button>
+                </div>
+              </div>
+              <div class="sidebox two">
+                <h2 class="text">Roll the dice to get a number!</h2>
+              </div>
+            </section>
+          </div>
         </div>
-        <div class="sidebox">
-          <h2 class="text">Roll the dice to get a number!</h2>
-        </div>
-      </section>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </main>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="dices.js"></script>
   </body>
 </html>
