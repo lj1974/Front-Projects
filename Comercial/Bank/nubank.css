@@ -1,0 +1,181 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --shade: rgba(226, 206, 169, 0.281);
+  --main-color: rgb(255, 255, 255);
+  --purple-color: #8e1499;
+  --text-color: black;
+}
+
+body {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: var(--purple-color);
+  padding: 0.8rem 1rem;
+  padding-top: 1.3rem;
+  color: var(--main-color);
+}
+
+header img {
+  filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg)
+    brightness(106%) contrast(106%);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 2rem;
+}
+
+header .title {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.user {
+  position: relative;
+}
+.user img {
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+
+.user::before {
+  content: '';
+  position: absolute;
+
+  background-color: rgba(255, 255, 255, 0.26);
+  left: 0rem;
+  top: -0.38rem;
+
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.right-icons img {
+  padding-left: 1rem;
+  height: 1.5rem;
+}
+
+.account-see {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 1rem;
+}
+
+.account-see .title {
+  font-size: 1.2rem;
+}
+
+.account-see img {
+  opacity: 60%;
+}
+
+.money {
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.subtittle {
+  font-size: 0.8rem;
+}
+
+.second {
+  border-bottom: 2.5px solid var(--shade);
+  padding-bottom: 1rem;
+}
+.account-options {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(4, 7rem);
+
+  margin: 2.5rem 0;
+}
+
+.second-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.2rem;
+}
+
+.account-options img {
+  height: 1.7rem;
+  filter: invert(0%) sepia(97%) saturate(9%) hue-rotate(33deg) brightness(97%)
+    contrast(101%);
+}
+
+.options-icons {
+  position: relative;
+}
+
+.options-icons img {
+  padding-left: 1.1rem;
+}
+
+.options-icons::before {
+  content: '';
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+
+  top: -60%;
+
+  background-color: var(--shade);
+}
+
+.card {
+  padding: 1rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  background-color: var(--shade);
+  position: relative;
+}
+
+.card p {
+  margin-left: 2.3rem;
+}
+
+.card-figure {
+  display: flex;
+  align-items: center;
+}
+
+.card-figure::before {
+  content: '';
+  position: absolute;
+  height: 1.5rem;
+  width: 1rem;
+
+  top: 0.5rem;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+}
+
+.card-figure::after {
+  content: '';
+  position: absolute;
+  height: 0.27rem;
+  width: 0.2rem;
+  background-color: black;
+  left: 1.6rem;
+}
