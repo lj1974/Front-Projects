@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: white;
+  --secondcolor: rgb(180, 91, 18);
+  --detail: rgb(180, 177, 177);
+  --radius: 0.3rem;
+}
+
+body {
+  width: 400px;
+  height: 800px;
+  background: var(--background);
+  border-right: 2px solid black;
+
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+header {
+  display: flex;
+  height: 9rem;
+
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  width: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  background: var(--secondcolor);
+
+  border-end-end-radius: var(--radius);
+  border-end-start-radius: var(--radius);
+}
+
+header::after {
+  content: 'VAR';
+  position: absolute;
+  color: var(--detail);
+  font-size: 2.5em;
+  letter-spacing: 3px;
+
+  left: 11rem;
+  bottom: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+/* TEXTS */
+.text {
+  font-size: 1.7em;
+}
+.text2 {
+  font-size: 1.4em;
+}
+
+.text3 {
+  font-size: 1em;
+}
+
+/* FORM AND STUFF */
+.first,
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  position: absolute;
+  top: 35%;
+  transform: rotate(-40%);
+}
+.info {
+  margin: 4rem 0 0 0;
+  gap: 1.2rem;
+}
+
+.first .text3 {
+  margin-top: 1rem;
+  padding: 1rem 1rem 0 1rem;
+  background-color: white;
+  box-shadow: 2px -2px 6px rgb(219, 213, 213);
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* FORM ONLY */
+.write-box {
+  background: var(--secondcolor);
+  box-shadow: -3px 6px 9px rgb(223, 199, 181);
+
+  border-radius: 0 0 1rem 1rem;
+
+  width: 16.9rem;
+  height: 5rem;
+  position: relative;
+}
+
+#card-num {
+  position: absolute;
+  height: 2rem;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+}
+
+#card-num:focus {
+  outline: none;
+  color: var(--secondcolor);
+  font-weight: bolder;
+  font-size: 1.3rem;
+
+  text-indent: 1em;
+}
+
+.button1 {
+  position: absolute;
+  left: 37%;
+  top: 50%;
+  transform: rotate(50%, -50%);
+  font-weight: bolder;
+  opacity: 70%;
+}
+
+.write-box:hover,
+.write-box:focus {
+  background: rgb(104, 103, 103);
+}
