@@ -1,0 +1,166 @@
+*, *::after, *::before {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --colorone: black;
+    --colortwo: rgb(110, 171, 211);
+    --colorthree: grey;
+    --text: white;
+}
+
+main {
+    margin: 2.7rem;
+}
+
+header {
+    font-size: 1.7rem;
+    color: var(--text);
+    background: var(--colortwo);
+
+    padding-left: 0.6rem;
+    padding: 1rem;
+}
+
+header span {
+    color: rgb(0, 0, 0);
+    font-size: 2.6rem;
+}
+
+/* HOW TO STYLES-------------------------- */
+.howto {
+    position: fixed;
+    background: var(--colortwo);
+    color: var(--text);
+    font-weight: bold;
+
+
+    padding: 1rem 1.5rem;
+    border-radius: 20%;
+    top: 7rem;
+    right: 3rem;
+}
+
+
+.howto:focus, .howto:hover {
+    background: var(--colorone);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.howtotext {
+    display: none;
+    position: fixed;
+    background: var(--colortwo);
+    color: var(--text);
+
+    padding: 1rem 1.5rem;
+    border-radius: 0.7rem;
+    top: 11rem;
+    right: 3rem;
+
+    width: 10rem;
+    word-break: normal;
+
+}
+
+#show {
+    display: block;
+}
+
+.howtotext p {
+    margin: 0.5rem;
+}
+
+/* ------------------------------------------------------ */
+
+
+/* TITLE AND WRITTEN ------------------------- */
+.title {
+    font-size: 1.2rem;
+    color: var(--colorthree);
+}
+
+/* ----------------------------------- */
+
+/* FORM STYLES----------------- */
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+}
+
+input {
+    width: 17rem;
+    height: 3rem;
+    margin: 0.6rem 0.3rem;
+    margin-bottom: 1.6rem;
+}
+
+input:focus{
+    font-size: 1.1rem;
+    text-indent: 0.6rem;
+}
+
+select {
+    width: 9rem;
+    height: 2rem;
+
+    margin: 0.6rem 0.3rem;
+    margin-bottom: 1.6rem;
+}
+
+/* ----------------------------------- */
+
+
+.three button {
+    all:unset;
+    margin: 1.7rem .5rem;
+    background: var(--colortwo);
+    color: var(--text);
+    padding: 0.8rem 1.6rem;
+
+    border-radius: 0.5555rem;
+    
+}
+
+.nine span {
+    font-size: 0.9rem;
+}
+
+.eleven {
+    display: flex;
+    justify-content: center;
+}
+
+.eleven button {
+    all: unset;
+
+    background: var(--colortwo);
+    color: var(--text);
+    font-size: 1.4rem;
+    padding: 1.4rem 4rem;
+    border-radius: .6rem;
+}
+
+
+.eleven  button:focus, .eleven button:hover {
+    background: var(--colorone);
+    color: var(--text);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0.4rem;
+    background: var(--colortwo);
+}
+
+footer:focus, footer:hover {
+    background: var(--colorone);
+    color: var(--text);
+    cursor: pointer;
+}
