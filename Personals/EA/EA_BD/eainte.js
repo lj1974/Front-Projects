@@ -3,7 +3,7 @@ const info = document.querySelector('[how]');
 const howtoshow = document.querySelector('[howinfo]');
 
 // LABELS
-// const howtoshow = document.querySelector('[howinfo]');
+// const  = document.querySelector('[howinfo]');
 // const howtoshow = document.querySelector('[howinfo]');
 // const howtoshow = document.querySelector('[howinfo]');
 // const howtoshow = document.querySelector('[howinfo]');
