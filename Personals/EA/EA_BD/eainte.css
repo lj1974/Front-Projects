@@ -113,6 +113,9 @@ select {
 
 /* ----------------------------------- */
 
+.two select {
+    width: 5rem;
+}
 
 .three button {
     all:unset;
@@ -129,12 +132,13 @@ select {
     font-size: 0.9rem;
 }
 
-.eleven {
+.eleven-center {
     display: flex;
     justify-content: center;
+   
 }
 
-.eleven button {
+.eleven {
     all: unset;
 
     background: var(--colortwo);
@@ -145,7 +149,7 @@ select {
 }
 
 
-.eleven  button:focus, .eleven button:hover {
+.eleven:focus, .eleven:hover {
     background: var(--colorone);
     color: var(--text);
     cursor: pointer;

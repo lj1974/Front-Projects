@@ -8,33 +8,36 @@
     <link rel="stylesheet" href="eainte.css">
     <title>EA AND BD</title>
 </head>
+
+
 <body>
+    
     <header><span>Welcome, </span>to the character lounge
     </header>
     <main>
         <section>
-            <div class="form">
+            <form action="eainte.php" method="POST" class="form">
                 <div class="one">
                     <p class="title"> * Insert here the name :</p>
                     <input type="text" name="name" id="name">
                 </div>
 
-                <div class="two"><p class="title">Insert here the birthday :</p>
-                <input type="date" name="date" id="date"></div>
-
-
-            <div class="three">
-                <p class="title">Choose here the gender :</p>
-                <div class="three-button">
-                <button>M</button>
-                <button>F</button>
-                <button>OTHER</button>
+                <div class="two">
+                    <label for="age" class="title">Insert here the age group :</label>
+                    <select id="age" name="age">
+                        <option value="child">Child</option>
+                        <option value="teen">Teen</option>
+                        <option value="youngaduly">Young Adult</option>
+                        <option value="adult">Adult</option>
+                        <option value="old">Elder</option>
+                        <option value="imortal">Imortal</option>
+                    </select>
                 </div>
-            </div>
+
 
             <div class="four">
                 <label for="align" class="title">Alignment :</label>
-                <select id="align">
+                <select id="align" name="align">
                     <option value="lawgood">Lawful Good</option>
                     <option value="neugood">Neutral Good</option>
                     <option value="chaogood">Chaotic Good</option>
@@ -49,7 +52,7 @@
 
             <div class="five">
                 <label for="country" class="title">From where?</label>
-                <select id="country">
+                <select id="country" name="country">
                     <option value="none">None bellow</option>
                     <option value="hards">Hardstrom</option>
                     <option value="fort">Fortuna</option>
@@ -71,25 +74,31 @@
 
                 <div class="eight">
                     <label for="organization" class="title">Organization :</label>
-                    <select id="organization">
+                    <select id="organization" name="organization">
                         <option value="noneorg">None Bellow</option>
                         <option value="rebel">Rebellion</option>
                         <option value="hunters">Hunters</option>
                         <option value="cupula">Cúpula</option>
-                        <option value="trueneu">Swords</option>
+                        <option value="liga">Liga das Laminas</option> 
+                        <option value="legion">Legion</option>
+                        <option value="graham">Graham</option>
+                        <option value="monas">Monasterio</option>
                     </select></div>
 
                     <div class="nine">
                         <p class="title">Titles <span>(Please separete titles by comma [ , ]) :</span></p>
                         <input type="text" name="titles" id="titles">  
                     </div>
+
                     <div class="ten">
                         <p class="title">Description :</p>
                         <input type="text" name="desc" id="desc">  
                     </div>
-                </div>
 
-                <div class="eleven"><button>Submit</button></div>
+                <div class="eleven-center">
+                <input type="submit" value="cadastro" class="eleven">
+                </div>
+            </form>
 
 
             <div how class="howto">?</div>
