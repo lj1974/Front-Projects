@@ -1,0 +1,93 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --back: rgb(6, 11, 34);
+    --text: white;
+    --shade: 80%;
+}
+
+header {
+    background: var(--back);
+    opacity: var(--shade);
+    color: var(--text);
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: fixed;
+
+    width: 100%;
+    height: 3.5rem;
+}
+
+.head {
+    position: fixed;
+    padding: 1.5rem 2rem;
+}
+
+
+
+.head-back {
+    image-rendering: optimizeQuality;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    height: 750px;
+    border-bottom: 10px solid var(--back);
+
+    background-image: linear-gradient(rgba(202, 193, 193, 0.527),
+    rgba(0, 0, 0, 0.5)) , url("https://78.media.tumblr.com/e27f064519cab4bbb7f20aeee5e153f5/tumblr_oljdqxUX2b1u7ns0go1_1280.jpg");
+
+}
+
+
+.nature-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: var(--text);
+    height: 3rem;
+    width: 100%;
+    z-index: 99;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-48%, 50%);
+}
+
+.ask-place {
+    display: flex;
+    gap: 2rem;
+}
+
+.text, .ask {
+    background: var(--back);
+    opacity: var(--shade);
+    border-radius: 0.5rem;
+
+}
+
+.text:focus, .text:hover,
+.ask:focus, .ask:hover {
+    background: white;
+    color: var(--back);
+    opacity: 60%;
+}
+
+.text {
+    padding: 2rem 8rem;
+    margin-bottom: 2.5rem;
+}
+
+.ask {
+    padding: 2rem 4rem;
+}
