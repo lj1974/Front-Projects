@@ -18,14 +18,13 @@ header {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    position: fixed;
+
 
     width: 100%;
     height: 3.5rem;
 }
 
 .head {
-    position: fixed;
     padding: 1.5rem 2rem;
 }
 
@@ -39,8 +38,7 @@ header {
     background-size: cover;
 
 
-    height: 750px;
-    border-bottom: 10px solid var(--back);
+    height: 150vh;
 
     background-image: linear-gradient(rgba(202, 193, 193, 0.527),
     rgba(0, 0, 0, 0.5)) , url("https://78.media.tumblr.com/e27f064519cab4bbb7f20aeee5e153f5/tumblr_oljdqxUX2b1u7ns0go1_1280.jpg");
@@ -53,7 +51,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     color: var(--text);
     height: 3rem;
     width: 100%;
@@ -76,6 +74,7 @@ header {
 
 }
 
+
 .text:focus, .text:hover,
 .ask:focus, .ask:hover {
     background: white;
@@ -90,4 +89,29 @@ header {
 
 .ask {
     padding: 2rem 4rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.text-big {
+    background: var(--back);
+    opacity: var(--shade);
+    color: var(--text);
+    font-weight: 1.3rem;
+    padding: 5rem 4rem;
+}
+
+#yes-page {
+    padding-bottom: 4rem;
+    
+    height: 100vh;
+    background-image: linear-gradient(rgba(202, 193, 193, 0.527),
+    rgba(0, 0, 0, 0.5)) , url("http://78.media.tumblr.com/e682eecef2145d1c790c7b2d05f854b0/tumblr_odyxbjv5LI1u7ns0go1_1280.jpg");
+    image-rendering: optimizeQuality;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   
 }
