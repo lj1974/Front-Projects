@@ -25,12 +25,12 @@
                 <div class="two">
                     <label for="age" class="title">Insert here the age group :</label>
                     <select id="age" name="age">
-                        <option value="child">Child</option>
-                        <option value="teen">Teen</option>
-                        <option value="youngaduly">Young Adult</option>
-                        <option value="adult">Adult</option>
-                        <option value="old">Elder</option>
-                        <option value="imortal">Imortal</option>
+                        <option value="Child">Child</option>
+                        <option value="Teen">Teen</option>
+                        <option value="YoungAdult">Young Adult</option>
+                        <option value="Adult">Adult</option>
+                        <option value="Elder">Elder</option>
+                        <option value="Imortal">Imortal</option>
                     </select>
                 </div>
 
@@ -53,9 +53,9 @@
             <div class="five">
                 <label for="country" class="title">From where?</label>
                 <select id="country" name="country">
-                    <option value="none">None bellow</option>
-                    <option value="hards">Hardstrom</option>
-                    <option value="fort">Fortuna</option>
+                    <option value="noneplace">None bellow</option>
+                    <option value="hardstrom">Hardstrom</option>
+                    <option value="fortuna">Fortuna</option>
                     <option value="kimera">Kimera</option>
                     <option value="astra">Astra</option>
                     <option value="vulmo">Vulmo</option>
@@ -82,7 +82,7 @@
                         <option value="liga">Liga das Laminas</option> 
                         <option value="legion">Legion</option>
                         <option value="graham">Graham</option>
-                        <option value="monas">Monasterio</option>
+                        <option value="monasterio">Monasterio</option>
                     </select></div>
 
                     <div class="nine">
