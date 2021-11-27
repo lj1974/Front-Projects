@@ -23,15 +23,15 @@ if(empty($_POST['name'])){
     echo "\n\n\nYou must include a name!";
 } else {
 
-    $sql = "insert into personagem(nome, alinhamento, pais, habilidade, ocupacao, titulo, descricao_perso, age)
+    $sql = "insert into personagem(nome, alinhamento, pais, habilidade, ocupacao, titulo, descricao_perso, age, FKorg)
     values('$nome', '$align', '$place', '$skill', '$ocupation', '$title', '$desc', '$age', '$orga')";
     $result = mysqli_query($conn, $sql);
 
-    $take_perso = "select idperso from personagem where idperso = '$nome'";
-    echo "$take_perso";
+    $fetch = mysqli_query($conn, "select idperso from personagem where nome='$nome'");
+    $take_perso = mysqli_fetch_assoc($fetch);
 
-    $sql_org = "insert into org_perso(org_id_take, perso_id_take) values ('$orga', '$take_perso')";
-    $result2 = mysqli_query($conn, $sql_org);
+    $sql_org = "insert into org_perso(org_id_take, perso_id_take) values ('$orga', '{$take_perso['idperso']}')";
+    $resultthree= mysqli_query($conn, $sql_org);
 
 
 if (!$sql){
@@ -40,9 +40,3 @@ if (!$sql){
     echo("Dados inseridos com sucesso!");
 }
 }
-
-
-
-// $sql2 =  "INSERT INTO `org_perso` (`org_id_take`, `org_perso_take`) VALUES ('$id_org', '$id_perso')";
-
-?>
