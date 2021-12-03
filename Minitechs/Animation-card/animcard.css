@@ -51,12 +51,9 @@ main {
     margin: 2rem 0;
 }
 
-
-.card-background {
-    background: var(--orangeback);
-    color: var(--orangetext);
-    border-radius: calc(var(--radius)/2);
-    padding: 2rem;
+#card-background {
+border-radius: calc(var(--radius)/2);
+padding: 2rem;
 }
 
 .card-name {
@@ -146,41 +143,51 @@ button:focus, button:hover {
 
 .color.one {
     background: var(--orangeback);
+    color: var(--orangetext);
 }
 
 .color.two {
     background: var(--pinktext);
+    color: var(--purpletext);
 }
 
 .color.three {
     background: var(--whitetext);
+    color: var(--blackback);
     border: 0.6666px solid black;
 }
 
 .color.four {
     background: var(--blueblack);
+    color: var(--purpletext);
 }
 .color.five {
     background: var(--purpleback);
+    color: var(--purpletext);
 }
 
 .color.six {
     background: var(--orangetext);
+    color: var(--orangeback);
 }
 
 .color.seven {
     background: var(--purpletext);
+    color: var(--whitetext);
 }
 
 .color.eight {
     background: var(--greentext);
+    color: var(--whitetext);
 }
 
 .color.nine {
     background: var(--blackback);
+    color: var(--whitetext);
 }
-
 .color.ten {
     background: var(--pinkback);
+    color: var(--blackback);
+    
 }
 
