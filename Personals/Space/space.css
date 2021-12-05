@@ -1,0 +1,121 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --black: black;
+    --white: white;
+
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+ 
+    opacity: 80%;
+}
+
+
+
+header span:hover {
+    transition: ease-in-out 700ms color;
+    color: #7B92A7;
+}
+
+.direita {
+    display: flex;
+    gap: 2rem;
+    margin-left: 3rem;
+    
+}
+
+.esquerda {
+    margin-right: 3rem;
+}
+
+
+main {
+    margin: 2rem;
+    margin-top: 10rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-left: 4rem;
+
+}
+
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+
+}
+
+img {
+    height: 25rem;
+    margin-bottom: 3rem;
+
+    box-shadow: grey -8px -3px 14px, grey 5px 5px 20px;
+    border-radius: 10px;
+}
+
+.texto {
+    font-size: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.texto p {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+@media screen and (min-width: 1000px){
+    body {
+         margin: 0 10rem;
+    }
+
+    h1 {
+         height: 10rem;
+        width: 40rem;
+    }
+
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+    height: 35rem;
+    width: 50rem;
+    gap: 3rem;
+    }
+
+
+} 
