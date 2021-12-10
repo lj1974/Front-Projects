@@ -1,0 +1,169 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+}
+:root {
+	--back: white;
+	--other:black;
+    --width: 100vw;
+}
+
+body {
+	background: var(--back);
+}
+
+
+
+header {
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	background: white;
+    box-shadow: 0.1px 1px 3px 0px #00000070;
+
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 10%;
+	height: 30px;
+}
+
+header ul {
+	display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 2.7rem;
+
+	
+}
+
+header ul il {
+		z-index: 1;
+		position: relative;
+		list-style: none;
+}
+
+header ul il:hover .icon {
+	transform: translateY(30px);
+}
+
+
+header ul il:hover .text {
+    opacity: 1;
+}
+
+header ul il a {
+	color: black;
+	text-decoration: none;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	text-align: center;
+	font-weight: 400;
+} 
+
+
+
+
+.icon {
+	display: block;
+	position: relative;
+	text-align: center;
+
+	font-size: 1.4rem;
+	transition: .5s;
+}
+
+
+.text {
+	position: absolute;
+	font-size: 0.6em;
+	letter-spacing: 0.4em;
+    padding-bottom: 1rem;
+    opacity: 0;
+}
+
+
+
+.icon::before {
+    content: '';
+	position: absolute;
+	background: var(--other);
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+    left: -0.85rem;
+    top: -50%;
+
+    transition: 0.5s;
+    opacity: 0;
+
+}
+
+.text:hover ~ .icon::before, .icon:hover::before {
+    opacity: 1;
+ 
+}
+
+.text:hover ~ .icon, .icon:hover{
+    color: rgb(212, 211, 211);
+}
+
+section {
+    margin: 2rem;
+}
+
+.box-moving{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 70px;
+    width: 70px;
+    padding: 0.2rem;
+    position: relative;
+    border-radius: 0.4rem;
+
+    color: rgb(212, 211, 211);
+    background: black;
+}
+
+.box-moving::after {
+    content: 'Oh yes';
+    font-size: 0.7rem;
+    padding: 0.2rem;
+
+    position: absolute;
+
+    height: 40px;
+    width: 40px;
+    background: grey;
+    border-radius: 0.4rem;
+
+    right: -1.5rem;
+    border: 4px solid var(--back);
+    
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.box-moving:hover::after {
+    opacity: 1;
+    transform: translateX(20%);
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+s
+p {
+    font-size: 0.9rem;
+}
