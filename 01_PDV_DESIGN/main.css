@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --preto: #000;
+    --primaria: rgb(0, 0, 0);
+    --secundaria: #fdfdfd;
+}
+
+
+body {
+    background-image: linear-gradient(to top, #505285 0%,
+     #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%,
+      #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    height: 100vh;
+}
+
+.title-head {
+    display: block;
+
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+
+    color: var(--primaria);
+}
+
+.title-head span {
+font-weight: bolder;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+    padding-bottom: 1rem;
+    
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px ); 
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.login-box > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1.4rem;
+    width: 16rem;
+    margin-bottom: 2rem;
+    color: var(--primaria);
+
+    font-weight: 600;
+}
+
+.login-box .title {
+    color: var(--secundaria);
+    font-size: 1rem;
+    letter-spacing: 0.11rem;
+    font-weight: 00;
+}
+
+input {
+    padding: 0.2rem;
+    border: 1px solid white;
+    border-radius: 2px;
+    width: 11rem;
+
+}
+
+input:focus {
+    color: black;
+    outline: 1.4px solid white;
+
+}
+
+.login-box button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secundaria);
+    font-weight: 300;
+
+    background: var(--preto);
+    border-radius: 50%;
+    margin: 0.5rem 0;
+
+    width: 3.5rem;
+    height: 3.5rem;
+
+}
+
+.login-box button:hover {
+    color: var(--preto);
+    background: var(--secundaria);
+    cursor: pointer;
+}
+
+.aviso {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    font-style: normal;
+}
+
+.aviso span a {
+    color: var(--secundaria);
+    margin-left: 0.7rem;
+}
+
+.aviso span a:hover {
+    color: var(--preto);
+    cursor: pointer;
+}
