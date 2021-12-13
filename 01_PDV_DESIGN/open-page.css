@@ -5,14 +5,59 @@ body {
 
 main {
     display: flex;
-    position: relative;
     justify-content: center;
+    flex-direction: column;
+}
 
-    margin-top: 6rem;
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    margin-top: 3rem;
 
     color: var(--secundaria);
     font-weight: 700;
     letter-spacing: 0.3em;
+}
+
+
+.user {
+
+    color: var(--primaria);
+    
+    width: 70%;
+    max-width: 27rem;
+    padding: 1rem 1.5rem;
+
+    background: rgba(255, 255, 255, 0.616);
+    box-shadow: 0 8px 32px 0 rgba(47, 50, 83, 0.377);
+    backdrop-filter: blur( 4px ); 
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.user-name {
+    font-size: 0.75em;
+}
+
+.login-nome {
+    font-size: 0.7em;
+    padding: 0.5rem 0;
+}
+
+.user .buttons {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+
+.date {
+    font-size: 0.6em;
 }
 
 .box {
@@ -24,7 +69,11 @@ main {
     gap: 1rem;
 
     margin-bottom: 2.5rem;
-    padding: 1rem 1.5rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8em;
+
+    width: 70%;
+    max-width: 27rem;
 
     /* background: rgba(255, 255, 255, 0.089); */
     background: rgba(255, 255, 255, 0.616);
@@ -46,8 +95,8 @@ main {
     color: var(--primaria);
     border-radius: 50%;
 
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
 
     font-size: 2rem;
 }
