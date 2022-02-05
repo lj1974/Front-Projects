@@ -1,0 +1,184 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+}
+:root {
+	--black: black;
+	--white: white;
+	--padding1: 0.5rem;
+}
+body {
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	width: 100vw;
+	background: var(--white);
+	position: fixed;
+
+	padding-bottom: 0.7rem;
+	z-index: 99999;
+
+    box-shadow: 3px 5px 10px rgb(228, 225, 225);
+
+}
+
+header h1 {
+	padding-top: 1rem;
+	padding-left: 1.6rem;
+	font-size: 1.2em;
+}
+
+header h1 span {
+	font-size: 1.5em;
+}
+
+.main-sec {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+    width: 100%;
+
+	margin-bottom: 2rem;
+	padding-top: 7rem;
+ 
+}
+
+.main-sec aside {
+	width: 7rem;
+}
+
+.main-sec ul {
+	list-style: none;
+}
+
+.main-sec ul li:hover {
+	opacity: 80%;
+}
+
+.main-sec ul li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin: 1.2rem 0;
+}
+
+.main-sec ul li img {
+	width: 3.4rem;
+	height: 3.4rem;
+}
+
+.main-sec ul li .text {
+	font-size: 0.8rem;
+	letter-spacing: 0.12rem;
+	padding-top: 0.22rem;
+}
+
+.galeria {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+    height: 30rem;
+	padding: 1.5rem 0;
+    padding-left: 0rem;
+	border: 0.5555px solid var(--black);
+	border-right: none;
+
+    position: relative;
+
+}
+
+.galeria:first-child {
+	align-items: flex-end;
+}
+
+.galeria .foto img {
+	width: 16rem;
+	height: 22rem;
+	border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.galeria .desc  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: absolute;
+
+    right: 2rem;
+    bottom: 0.5rem;
+}
+
+.galeria .desc .preco {
+    font-size: 2.5rem;
+}
+
+.galeria .desc .text2 {
+    font-size: 0.9em;
+    letter-spacing: 0.229rem;
+}
+
+.galeria .desc .botao button {
+    all: unset;
+    display: block;
+    background: var(--black);
+    color: var(--white);
+
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+
+}
+
+.galeria .desc .botao button:hover {
+    color: var(--black);
+    background: var(--white);
+    outline: 0.3333px solid var(--black);
+}
+
+
+.rest-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1.5rem;
+    margin-top: 7rem;
+    padding: 2rem;
+
+    background: var(--black);
+    color: var(--white);
+    position: relative;
+}
+
+.rest-info .icon {
+    position: absolute;
+    top: -2.5rem;
+    z-index: 9999;
+}
+
+.rest-info::before {
+    content: '';
+    background: var(--white);
+    position: absolute;
+
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    top: -2.8rem;
+    
+}
+
+.rest-info .text3 {
+    padding: 2rem 0;
+}
+
+@media(min-width: 800px)  {
+   main {
+       display: grid;
+       grid-template-columns: repeat(2, auto);
+   }
+}
