@@ -266,6 +266,15 @@ main .text span a {
     
 }
 
+#vestes .preco h4 {
+    color: red;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#vestes .preco {
+    margin: 2rem 0;
+}
 
 #vestes .roupas-op .tipos {
     margin-top: 3rem;
@@ -547,6 +556,10 @@ footer {
 
     #about-top p.text {
         font-size: 0.9rem;
+    }
+
+    .about-me {
+        height: 15.59rem;
     }
 
 }
