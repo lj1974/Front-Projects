@@ -1,0 +1,4 @@
+É possível criar um novo componente dentro da sua aplicação angular simplesmente 
+chegando no terminal e escrevendo: ng g c nome-docomponente
+
+Para criar um serviçoo (injetar uma dependencia): ng g s nome-doocomponente
