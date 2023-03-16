@@ -1,0 +1,72 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+:root{
+    --blue: #A6ABEA;
+    --white: #FFFF;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+
+    background: radial-gradient(82.29% 162.74% at 69.76% 48.44%,
+    #201672 13.02%, #5244BC 67.19%, #6E64BB 94.97%, 
+    #7268BB 100%);
+}
+
+main {
+    z-index: 9999;
+    position: relative;
+}
+
+decor {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 0;
+}
+
+.decor .bolhaT {
+    position: fixed;
+    top: 80px;
+    right: max(10%, 140px);
+
+    width: min(40%, 14rem);
+}
+
+.decor .bolhaB {
+    position: fixed;
+    bottom: 30px;
+    right: min(40px, 100px);
+
+    width: min(40%, 11rem);
+
+}
+
+.decor .espiral {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.decor .sexaT {
+    position: fixed;
+    top: 130px;
+    left: 10%;
+    width: min(30%, 13rem);;
+}
+
+.decor .sexaB {
+    position: fixed;
+    bottom: 130px;
+    left: 20%;
+    width: min(30%, 13rem);
+
+}
