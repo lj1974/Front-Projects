@@ -1,0 +1,209 @@
+.segundaPagina {
+    height: 100vh;
+    width: 100%;
+
+    padding-top: 6rem;
+
+}
+
+.form-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.segundaPagina .visu-dia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    
+}
+
+.segundaPagina .troca-dia {
+    display: flex;
+    color: var(--white);
+    gap: 1.4rem;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.segundaPagina .troca-dia #data {
+    font-size: calc(2em + 2vw);
+}
+.segundaPagina .troca-dia .seta {
+    width: 2.5rem;
+
+}
+
+
+.segundaPagina .troca-dia .seta:hover {
+    cursor: pointer;
+}
+
+.segundaPagina h3.subtitle {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.2rem;
+    margin-top: 1rem;
+    color: var(--blue);
+    font-weight: 800;
+    
+
+}
+
+.segundaPagina #listaPrograma {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    font-size: calc(1em + 0.7vw);
+
+    min-height: 56vh;
+}
+
+.segundaPagina .opcaoEvento {
+    display: flex;
+    max-width: 70rem;
+    width: 85%;
+
+    color: var(--white);
+    background: rgba(217, 217, 217, 0.4);
+    backdrop-filter: blur(1.94876px);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+
+    position: relative;
+}
+
+.segundaPagina .opcaoEvento input {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+
+}
+
+.segundaPagina .checksign {
+    position: absolute;
+    right: 1.5rem;
+    top: 30%;
+
+    width: calc(1vw + 2rem);
+    opacity: 0;
+}
+
+.segundaPagina .opcaoEvento label {
+    font-weight: bolder;
+}
+.segundaPagina .opcaoEvento label span {
+    margin-left: 1.5rem;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+.dadosPessoais {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    padding: 2rem 0rem; 
+    gap: 1rem;
+    font-size: calc(1em + 0.7vw);
+
+}
+
+
+.dadosPessoais .title {
+    font-size: calc(2rem + 1vw);
+    color: var(--white);
+    width: 100%;
+
+    margin-bottom: 1rem;
+}
+
+
+.dadosPessoais input {
+    all: unset;
+
+    color: var(--white);
+    background: rgba(217, 217, 217, 0.4);
+    backdrop-filter: blur(1.94876px);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+
+    max-width: 70rem;
+
+    
+}
+
+.dadosPessoais label {
+    color: var(--white);
+    font-weight: 200;
+    font-size: calc(1rem + 0.5vw);
+
+    margin-bottom: 0.5rem;
+}
+
+.dadosPessoais select {
+    all: unset;
+
+    color: var(--white);
+    background: rgba(217, 217, 217, 0.4);
+    backdrop-filter: blur(1.94876px);
+    border-radius: 1rem; 
+    padding: 1rem 2rem;
+}
+
+.dadosPessoais select:focus {
+    color: rgb(0, 0, 0);
+}
+ 
+.questions {
+    width: 80%;
+    max-width: 70rem;
+
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin-bottom: 1rem;
+}
+
+.selects {
+    display: flex;
+    gap: 10%;
+}
+
+#enviar {
+    all: unset;
+
+    display: flex;
+    max-width: 7rem;
+    padding: 0.6rem 2rem;
+    font-size: calc(1rem + 0.8vw);
+    background-color: var(--white);
+    color: var(--blue);
+    font-weight: 800;
+    border-radius: 0.7rem;
+
+    margin-top: 2rem;
+}
+

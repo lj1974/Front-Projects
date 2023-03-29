@@ -9,7 +9,7 @@ const diaum = [
         },
         {
             hora: "22:00",
-            nome: "Google Cloud Palsetra"
+            nome: "Google Cloud Palestra"
         }
     
 ]

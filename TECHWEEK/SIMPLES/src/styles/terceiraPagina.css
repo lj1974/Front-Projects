@@ -1,0 +1,96 @@
+.terceiraPagina {
+    margin-top: 40rem;
+    margin-bottom: 10rem;
+}
+
+.terceiraPagina h1 {
+    font-size: calc(2rem + 1vw);
+    color: var(--white);
+    width: 100%;
+   justify-content: end;
+
+}
+
+.terceiraPagina .logos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.logos .dois-tres {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos .um {
+    display: flex;
+    gap: 10%;
+}
+
+.logos img {
+    width: calc(1rem + 14vw);
+}
+
+.logos .um .div-um {
+    display: grid;
+    align-items: center;
+    gap: 0rem 10%;
+    grid-template-columns: repeat(2, auto);
+}
+
+.logos .dois {
+    display: grid;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-template-columns: repeat(2, auto);
+}
+
+.logos .dois img {
+    width: calc(1rem + 14vw);
+}
+
+.logos .tres {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+
+}
+.logos .tres img {
+    width: calc(1rem + 12vw);
+}
+
+@media screen and (max-width: 680px) {
+
+    .logos img {
+        width: calc(5rem + 15vw);
+    }
+
+    .terceiraPagina .logos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logos .um .div-um {
+        display: grid;
+        align-items: center;
+        gap: 0.5remm 10%;
+        grid-template-columns: repeat(1, auto);
+    } 
+
+    
+.logos .dois-tres {
+    display: flex;
+   flex-direction: column;
+}
+
+.logos .tres img {
+    width: calc(5rem + 12vw);
+}
+
+.logos .dois img {
+    width: calc(6rem + 12vw);
+}
+
+
+}

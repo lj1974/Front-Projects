@@ -13,9 +13,9 @@ const realData = document.getElementById("data")
 
 const listagem_eventos = document.getElementById("listaPrograma")
 
-
 let getData = "17/08/2024"
 realData.innerHTML = getData
+
 setLista()
 
 
@@ -88,23 +88,28 @@ function setLista() {
         const {hora, nome} = lista[index]
 
         let opcaoEvento = document.createElement("div")
-        opcaoEvento.setAttribute("class", "opcaoEvento");
+        opcaoEvento.setAttribute("class", "opcaoEvento")
 
         let label = document.createElement("label")
-        label.setAttribute("for", index);
+        label.setAttribute("for", index)
 
         let span = document.createElement("span")
         
         let input = document.createElement("input")
-        input.setAttribute("type", "checkbox");
-        input.setAttribute("id", index);
-        input.setAttribute("name", index);
+        input.setAttribute("type", "checkbox")
+        input.setAttribute("id", index)
+        input.setAttribute("name", index)
         label.innerHTML = hora 
         span.innerHTML = nome
+
+        let check = document.createElement("img")
+        check.setAttribute("src", "../assets/Checked.svg")
+        check.setAttribute("class", "checksign")
 
         opcaoEvento.appendChild(label)
         label.appendChild(span)
         opcaoEvento.appendChild(input)
+        opcaoEvento.appendChild(check)
 
         listagem_eventos.appendChild(opcaoEvento)
     }
@@ -114,3 +119,32 @@ function setLista() {
 function removeLista() { 
    listagem_eventos.innerHTML = ''
 }
+
+
+
+
+const scroll = document.getElementById('scrolldown');
+
+scroll.addEventListener("click", () => {
+    var secondpage = document.getElementById('page2');
+    secondpage.scrollIntoView();
+})
+
+
+
+// Não fica o estado [erro]
+
+const element_check = document.querySelectorAll(".opcaoEvento")
+
+element_check.forEach((e) => {
+    e.querySelector("input[type=checkbox]").addEventListener('change', (d) => {
+   if(d.target.checked) {
+    e.style.opacity = "80%"
+    e.querySelector(".checksign").style.opacity = "1"
+} else {
+    e.style.opacity = "100%"
+    e.querySelector(".checksign").style.opacity = "0"
+}
+})})
+
+

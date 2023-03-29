@@ -1,0 +1,128 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+:root{
+    --blue: #A6ABEA;
+    --white: #FFFF;
+}
+
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800;900&display=swap');
+}
+
+html {
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background: radial-gradient(82.29% 162.74% at 69.76% 48.44%,
+    #201672 13.02%, #5244BC 67.19%, #6E64BB 94.97%, 
+    #7268BB 100%);
+
+}
+
+
+main {
+    z-index: 9999;
+    width: 100vw;
+   height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+decor {
+    position: fixed !important;
+    z-index: 0;
+}
+
+.decor .bolhaTop3 {
+    position: fixed;
+    top: 80px;
+    left: max(5%, 40px);
+
+    width: min(40%, 10rem);
+}
+
+
+.decor .espiral {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+.decor .sexaDuplo {
+    position: fixed;
+    right: 0;
+    top: 2rem;
+
+    width: 28rem;
+}
+
+.decor .bolhaB1 {
+    position: fixed;
+    right: 16rem;
+    bottom: 80px;
+
+    width: min(40%, 6rem);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+
+}
+
+footer img {
+    width: min(60%, 23rem);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 70%;
+
+}
+.title {
+    font-size: calc(2rem + 1vw);
+    color: var(--white);
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--blue);
+    font-size: calc(1em + 0.5vw);
+    text-align: center;
+    margin-top: 1rem;
+  
+}
+
+.content a {
+        
+    color: var(--white);
+    background: rgba(217, 217, 217, 0.4);
+    backdrop-filter: blur(1.94876px);
+    border-radius: 0.6rem; 
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    justify-self: center;
+    margin-top: 1.5rem;
+}

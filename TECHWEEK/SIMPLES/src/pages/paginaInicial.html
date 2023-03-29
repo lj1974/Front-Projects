@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/Background.css">
     <link rel="stylesheet" href="../styles/paginaInicial.css">
+    <link rel="stylesheet" href="../styles/segundaPagina.css">
+    <link rel="stylesheet" href="../styles/terceiraPagina.css">
+    
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800;900&display=swap" rel="stylesheet">
+   
+   
     <title>Tech Week</title>
 </head>
 <body>
@@ -30,15 +41,17 @@
 
         <section class="content">
 
+         <div id="c2">
+            <img  class="title" id="bigLogo" alt="Anima Tech Week" src="../assets/logos/titleBig.svg">
             <div class="title">
-                <img src="../assets/AnimaTittle.svg" alt="Anima">
-                <img src="../assets/TechTittle.svg" alt="Tech Week">
+                    <img alt="Anima" src="../assets/AnimaTittle.svg">
+                    <img alt="Tech Week" src="../assets/TechTittle.svg">
             </div>
             <h3 class="subtitle">Prepare-se para muito aprendizado e desafios!</h3>
             <p class="text">Palestras com Big Techs do mercado, como Google, Microsoft, Cisco, AWS, Red Hat e muito mais.</p>
-        
-            <section class="calendar">
-            <div class="data">
+         </div>
+            <section id="c1" class="calendar">
+            <div class="data-calendario">
                 <h4>17 a 20/08</h4>
             <h4>19h às 22h</h4>  
             </div>
@@ -46,7 +59,7 @@
         </section>
         </section>
 
-        <img src="../assets/ScrollDown.svg" alt="indica página abaixo">
+        <img id="scrolldown" src="../assets/ScrollDown.svg" alt="indica página abaixo">
 
     </section>
 
@@ -57,55 +70,73 @@
 
 
 
-    <section class="segundaPagina">
+    <section class="segundaPagina" id="page2">
         
         <form action="./agradecimento.html" class="form-total">
             <section class="evento">
                 <div class="visu-dia">
     
                     <div class="troca-dia">
-                        <img  id="seta-esquerda" src="../assets/SetaEsquerda.svg" alt="Seta Esquerda">
-                        <h1 id="data">17/08/2024</h1>
-                        <img id="seta-direita" src="../assets/setaDireita.svg" alt="Seta Direita">
+                            <img  class="seta" id="seta-esquerda" src="../assets/SetaEsquerda.svg" alt="Seta Esquerda">
+                            <h1 id="data">17/08/2024</h1>
+                            <img class="seta" id="seta-direita" src="../assets/setaDireita.svg" alt="Seta Direita">
                     </div>
-                    <h3 class="subtittle">Selecione os eventos que irá assistir:</h3>
+
+                    <h3 class="subtitle">Selecione os eventos que irá assistir:</h3>
                     
                     <div id="listaPrograma">
     
-                        <div class="opcaoEvento">
+                        <!-- <div class="opcaoEvento">
                             <label for="1">00:00 <span>Nome do Evento</span></label>
                             <input type="checkbox" name="1" id="1">
-                        </div>
+                         <img class="checksign" src="../assets/Checked.svg" alt="selecionado">
+                        </div> -->
     
                     </div>
-    
                 </div>
             </section>
     
             <section class="dadosPessoais">
-                <h1 class="tittle">Dados Pessoais:</h1>
-            
-                    <label for="nomeCompleto">Nome Completo</label>
-                    <input type="text" name="nomeCompleto" id="nomeCompleto">
+
+                <div class="questions">
+                    <h1 class="title">Dados Pessoais:</h1>
+
+                    <div class="campo">
+                        <label for="nomeCompleto">Nome Completo</label>
+                        <input type="text" name="nomeCompleto" id="nomeCompleto">
+                    </div>
     
+
+                    <div class="campo">
                     <label for="email">E-mail</label>
                     <input type="text" name="email" id="email">
-    
+                    </div>
+
+                    <div class="selects">
+                    
+                        <div class="campo">
                     <label for="campus">Campus</label>
-                   <select name="campus" id="campus" size="2">
+                   <select name="campus" id="campus" size="1">
                     <option value="paralela">Paralela</option>
                     <option value="lapa">Lapa</option>
                    </select>
-    
+                </div>
+                   
+                   <div class="campo">
                    <label for="modalidade">Modalidade</label>
-                   <select name="modalidade" id="modalidade" size="3">
+
+                   <select name="modalidade" id="modalidade" size="1">
                     <option value="presencial">Presencial</option>
                     <option value="semi">Semi-presencial</option>
                     <option value="ead">EAD</option>
                 </select>
+            </div>
+            </div>
+
+            </div>
+            <input id="enviar" type="submit" value="Enviar">
             </section>
-    
-            <input type="submit" value="Enviar">
+
     
         </form>
     </section>
@@ -122,25 +153,34 @@
     <section class="terceiraPagina">
         
         <section class="logos">
+            <!-- <h1 class="title">Parceiros:</h1> -->
+
             <div class="um">
                 <img src="../assets/logos/girlsintech.svg" alt="Girls in Tech">
-                <img src="../assets/logos/animahub.svg" alt="Ânimahub">
-                <img src="../assets/logos/microsoft.svg" alt="Microsoft">
-                <img src="../assets/logos/animaeduca.svg" alt="Ânima Educação">
-                <img src="../assets/logos/gama.svg" alt="Gama Academy">
+                <div class="div-um">
+                    <img src="../assets/logos/animahub.svg" alt="Ânimahub">
+                    <img src="../assets/logos/microsoft.svg" alt="Microsoft">
+                    <img src="../assets/logos/animaeduca.svg" alt="Ânima Educação">
+                    <img src="../assets/logos/gama.svg" alt="Gama Academy">
+                </div>
+
             </div>
 
-            <div class="dois">
-                <img src="../assets/logos/cisco.svg" alt="Cisco">
-                <img src="../assets/logos/oracle.svg" alt="Oracle Academy">
-                <img src="../assets/logos/aws.svg" alt="AWS">
-                <img src="../assets/logos/unreal.svg" alt="Unreal Engine">
-            </div>
+            <div class="dois-tres">
+    
+                <div class="tres">
+                    <img src="../assets/logos/cisco.svg" alt="Cisco">
+                    <img src="../assets/logos/oracle.svg" alt="Oracle Academy">
+                    <img src="../assets/logos/aws.svg" alt="AWS">
+                    <img src="../assets/logos/unreal.svg" alt="Unreal Engine">
+                </div>
 
-            <div class="tres">
-                <img src="../assets/logos/redhat.svg" alt="Red Hat">
-                <img src="../assets/logos/googlecloud.svg" alt="Google Cloud">
-                <img src="../assets/Logos/animaparceira.svg" alt="Anima Parceria com IBM">
+                <div class="dois">
+                    <img src="../assets/logos/redhat.svg" alt="Red Hat">
+                    <img src="../assets/logos/googlecloud.svg" alt="Google Cloud">
+                    <img src="../assets/Logos/animaparceira.svg" alt="Anima Parceria com IBM">
+                    
+                </div>
             </div>
         </section>
     </section>
